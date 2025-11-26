@@ -1,4 +1,5 @@
 **Social Network Analysis Using Gephi**
+
 Twitter Vaccine-Exemption Conversations — Network Extraction, Cleaning & Visualization
 
 This project applies social network analysis (SNA) techniques to real Twitter data related to vaccine-exemption discussions. The workflow demonstrates skills in data cleaning, network construction, graph theory metrics, and visualization using OpenRefine, Excel, and Gephi.
