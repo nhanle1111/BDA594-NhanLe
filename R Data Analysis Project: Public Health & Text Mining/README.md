@@ -48,14 +48,14 @@ Custom ggplot2 charts were created to explore:
 - Regional differences in death counts and rates
 
 **Example:**
-
+```
 ggplot(summary_data, aes(x = Cause, y = Mean_Rate, fill = Cause)) +
   geom_bar(stat = "identity") +
   theme(axis.text.x = element_text(angle = 60, hjust = 1)) +
   labs(title = "Mean Mortality Rates by Cause (2011–2016)",
        y = "Mean Age-Adjusted Rate",
        x = "Leading Cause of Death")
-
+```
 **☁️ Text Mining & Word Clouds**
 
 This project includes two separate word cloud analyses:
@@ -86,7 +86,7 @@ Steps:
 - Export a high-resolution PNG image (e.g., OpiumMonopoly_WordCloud.png)
 
 Example snippet:
-
+```
 library(tm)
 library(wordcloud)
 library(RColorBrewer)
@@ -109,3 +109,4 @@ df <- data.frame(word = names(freq), freq = freq)
 png("OpiumMonopoly_WordCloud.png", width = 12, height = 8, units = "in", res = 300)
 wordcloud(df$word, df$freq, random.order = FALSE, colors = brewer.pal(8, "Dark2"))
 dev.off()
+```
